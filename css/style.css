@@ -59,14 +59,14 @@ header {
     width: 100%;
     background-color: #fff;
     border: 0;
-    color: #FF5722;
+    color: #1b00b1;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
     margin-top: 10px;
 }
 
 #switch-keliling:hover {
-    background-color: #FF5722;
+    background-color: #2298ff;
     color: white;
 }
 
