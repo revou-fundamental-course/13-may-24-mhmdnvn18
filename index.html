@@ -1,35 +1,112 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content=""widht=device-width, initial-scale="1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATORKU</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
     <header>
-        <h1>Welcome to Calculatorku</h1>
+        <h1>KALKULATORKU</h1>
         <section>
-            <p>
-                Hai Sobat, Selamat datang di Web Calculatorku
+            <p id="hi">
+                Halo semua, Selamat Datang di KALKULATORKU. Kamu bisa menghitung luas dan keliling segitiga disini. Silahkan coba dibawah
             </p>
         </section>
     </header>
 
-    <section>
+    <section id="section-content">
         <div class="section-content">
-            <h4>Segitiga</h4>
+            <h3>Segitiga</h3>
         </div>
 
-        <button type="button" id="switch-keliling"> Switch ke keliling segitiga</button>
-        
-        <section>
-            <div class="section-content">
-                <h2>Luas Segitiga</h2>
-            </div>
-        </section>
+        <button type="button" id="switch-keliling"><u>Switch ke Hitung Keliling Segitiga</u></button>
     </section>
-</body>
+    
+    <section id="section-luas">
+        <div class="section-luas">
+            <h2>Luas Segitiga</h2>
+        </div>
+        <div class="formula-img">
+            <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Rumus%20Luas%20Segitiga%20Jika%20Diketahui%20Alas%20dan%20Tinggi%20-%20Matematika%20Kelas%207.png" alt="Segitiga"> 
+        </div>  
 
+        <p class="rumus">Rumus: Luas = 1/2 x Alas x Tinggi</p>
+    </section>
+
+    <section id="form-container-luas" class="form-container">
+        <header>
+            <h2>Hitung Luas Segitiga</h2>
+        </header>
+
+        <form>
+            <p>Diketahui :</p>
+            <section>
+                <div>
+                    <label for="alas">Alas:</label>
+                    <input id="alas" type="number" />
+                </div>
+
+                <div>
+                    <label for="tinggi">Tinggi:</label>
+                    <input id="tinggi" type="number" />
+                </div>
+            </section>
+
+            <button type="button" id="hitung-segitiga">Hitung</button>
+            <button type="button" id="reset-btn">Reset</button>
+        </form>
+        <p id="luas-result"></p>
+    </section>
+    
+    <hr/>
+    
+    <div class="spacer"></div> 
+    
+    <section id="section-keliling">
+        <div class="section-luas">
+            <h2>Keliling Segitiga</h2>
+        </div>
+        <div class="formula-img">
+            <img src="https://cdn-web.ruangguru.com/landing-pages/assets/hs/Rumus%20Luas%20Segitiga%20Jika%20Diketahui%20Alas%20dan%20Tinggi%20-%20Matematika%20Kelas%207.png" alt="Segitiga"> 
+        </div>  
+
+        <p class="rumus">Rumus: Keliling = Sisi A + Sisi B + Sisi C</p>
+    </section>
+
+    <br>
+    
+    <section id="form-container-keliling" class="form-container">
+        <header>
+            <h2>Hitung Keliling Segitiga</h2>
+        </header>
+
+        <form>
+            <p>Diketahui :</p>
+            <section>
+                <div>
+                    <label for="sisiA">Sisi A:</label>
+                    <input id="sisiA" type="number" />
+                </div>
+
+                <div>
+                    <label for="sisiB">Sisi B:</label>
+                    <input id="sisiB" type="number" />
+                </div>
+
+                <div>
+                    <label for="sisiC">Sisi C:</label>
+                    <input id="sisiC" type="number" />
+                </div>
+            </section>
+
+            <button type="button" id="keliling-segitiga">Hitung</button>
+            <button type="button" id="reset-keliling">Reset</button>
+        </form>
+        <p id="keliling-result"></p>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
 </html>
